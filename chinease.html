@@ -1,0 +1,70 @@
+<html>
+<head>
+ <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='home.css') }}">
+ <style>
+ th, td {
+  padding-top: 15;
+  padding-bottom: 15;
+  padding-left: 15;
+  padding-right: 15;
+}
+ </style>
+</head>
+<body>
+<div class="split left">
+  <h2><p align="center"><font face="Mistral" color="orange">Chinese Remainder Theorem  !!!</font></p></h2>
+  <fieldset>
+  <p><font color="white"><b>If m1, m2, .., mk are pairwise relatively prime positive integers, and if a1, a2, .., ak are any integers, then the
+simultaneous congruences x ≡ a1 (mod m1), x ≡ a2 (mod m2), ..., x ≡ ak (mod mk)have a solution, and the solution is unique modulo m, where m = m1m2mk .</b></font></p>
+  </fieldset><br>
+  <table align="center">
+        <form method ="POST">
+            <tr>
+                <td>
+                    <p style="color:white">enter value for Matrix A:</p>
+                </td>
+				<td>
+				<input type="text" id="a" name="a" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="color:white">enter value for Matrix M:</p>
+				</td>
+                <td>
+					<input type="text" id="m" name="m" />
+                </td>
+            </tr>
+			<tr>
+                <td>
+					<input type="submit"  name="Submit" />
+                </td>
+            </tr>
+		</form>
+		<tr>
+			<td><iframe width="200" height="200" src="https://www.youtube.com/embed/e8DtzQkjOMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+		</tr>	
+	</table>	 
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+  <table align="center">
+  <tr>
+  <td>
+  <h2><p align="center"><font face="Mistral" color="black">Chinese Remainder is!!!</font><p></h2>
+  </td>
+  <td><h2><font face="Mistral" color="black">{{res}}</font></h2></td>
+  </tr>
+  <tr>
+  <td>
+	<a href=/>
+	<input type="Button" value="BACK TO HOME" name="submit" width="150" height="80" alt="submit"/></a>
+	</td>
+  </tr>
+  </div>
+</div>
+</body>
+</html>

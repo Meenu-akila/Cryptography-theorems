@@ -1,0 +1,69 @@
+<html>
+<head>
+ <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='home.css') }}">
+ <style>
+ th, td {
+  padding-top: 15;
+  padding-bottom: 15;
+  padding-left: 15;
+  padding-right: 15;
+}
+ </style>
+</head>
+<body>
+<div class="split left">
+  <h2><p align="center"><font face="Mistral" color="orange">Shift Cipher  !!!</font></p></h2>
+  <fieldset>
+  <p><font color="white"><b>Also known as Caesar Cipher where each letter of a given text is replaced by a letter with a fixed number of positions down the alphabet.</b></font></p>
+  </fieldset><br>
+  <table align="center">
+        <form method ="POST">
+            <tr>
+                <td>
+                    <p style="color:white">enter text to encrypt:</p>
+                </td>
+				<td>
+				<input type="text" id="txt" name="txt" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="color:white">enter key value:</p>
+				</td>
+                <td>
+					<input type="text" id="k" name="key" />
+                </td>
+            </tr>
+			<tr>
+                <td>
+					<input type="submit"  name="Submit" />
+                </td>
+            </tr>
+		</form>
+		<tr>
+			<td><iframe width="200" height="200" src="https://www.youtube.com/embed/l6jqKRXSShI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+		</tr>	
+	</table>	 
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+  <table align="center">
+  <tr>
+  <td>
+  <h2><p align="center"><font face="Mistral" color="black">Encrypted Text is!!!</font><p></h2>
+  </td>
+  <td><h2><font face="Mistral" color="black">{{res}}</font></h2></td>
+  </tr>
+  <tr>
+  <td>
+	<a href=/>
+	<input type="Button" value="BACK TO HOME" name="submit" width="150" height="80" alt="submit"/></a>
+	</td>
+  </tr>
+  </div>
+</div>
+</body>
+</html>

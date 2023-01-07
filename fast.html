@@ -1,0 +1,77 @@
+<html>
+<head>
+ <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='home.css') }}">
+ <style>
+ th, td {
+  padding-top: 15;
+  padding-bottom: 15;
+  padding-left: 15;
+  padding-right: 15;
+}
+ </style>
+</head>
+<body>
+<div class="split left">
+  <h2><p align="center"><font face="Mistral" color="orange">Fast Modular Exponentiation  !!!</font></p></h2>
+  <fieldset>
+  <p><font color="white"><b>Modular exponentiation is the remainder when an integer b (the base) is raised to the power e (the exponent), and divided by a positive integer m (the modulus); that is, c = b^e mod m.</b></font></p>
+  </fieldset><br>
+  <table align="center">
+        <form method ="POST">
+            <tr>
+                <td>
+                    <p style="color:white">enter B value:</p>
+                </td>
+				<td>
+				<input type="text" id="b" name="b" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p style="color:white">enter E value:</p>
+				</td>
+                <td>
+					<input type="text" id="e" name="e" />
+                </td>
+            </tr>
+			<tr>
+				<td>
+					<p style="color:white">enter M value:</p>
+				</td>
+                <td>
+					<input type="text" id="m" name="m" />
+                </td>
+            </tr>
+			<tr>
+                <td>
+					<input type="submit"  name="Submit" />
+                </td>
+            </tr>
+		</form>
+		<tr>
+			<td><iframe width="200" height="200" src="https://www.youtube.com/embed/8r4-5k-o1QE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</td>
+		</tr>	
+	</table>	 
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+  <table align="center">
+  <tr>
+  <td>
+  <h2><p align="center"><font face="Mistral" color="black">Fast Modular Exponentiation is!!!</font><p></h2>
+  </td>
+  <td><h2><font face="Mistral" color="black">{{res}}</font></h2></td>
+  </tr>
+  <tr>
+  <td>
+	<a href=/>
+	<input type="Button" value="BACK TO HOME" name="submit" width="150" height="80" alt="submit"/></a>
+	</td>
+  </tr>
+  </div>
+</div>
+</body>
+</html>
